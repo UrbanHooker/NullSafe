@@ -87,9 +87,9 @@
                 }
 
                 //remove all classes that have subclasses
-                for (Class someClass in excluded)
+                for (NSString *someClass in excluded)
                 {
-                    [classList removeObject:someClass];
+                    [classList removeObject:NSClassFromString(someClass)];
                 }
 
                 //free class list
